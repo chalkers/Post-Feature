@@ -12,7 +12,7 @@ Feature: Manage posts
     And I should see "body 1"
 
   Scenario: Delete post
-    Given the following posts:
+    Given I have the following post records
       | title   | body   |
       | title 1 | body 1 |
       | title 2 | body 2 |
@@ -28,7 +28,7 @@ Feature: Manage posts
       | title 4 | body 4 |
 
     Scenario: List Blog Articles 
-		Given I have the following article records
+		Given I have the following post records
 	 	| title |
 		| Ruby  |
 	 	| Rails |
@@ -39,7 +39,7 @@ Feature: Manage posts
 		And I should see "BDD"
 	
 	Scenario: Edit a new post
-		Given I have the following article records
+		Given I have the following post records
 	 		| title | body	|
 			| Ruby  | Ruby body|
 		When I go to post list page
