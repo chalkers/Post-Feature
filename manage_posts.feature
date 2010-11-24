@@ -7,7 +7,7 @@ Feature: Manage posts
     Given I am on the new post page
     When I fill in "Title" with "title 1"
     And I fill in "Body" with "body 1"
-    And I press "Create"
+    And I press "Create Post"
     Then I should see "title 1"
     And I should see "body 1"
 
@@ -46,6 +46,6 @@ Feature: Manage posts
     And I follow "Edit Post"
     And I fill in "Title" with "title 1"
     And I fill in "Body" with "body 1"
-    And I press "Update"
+    And I press "Update Post"
     Then I should see "title 1"
     And I should see "body 1"
